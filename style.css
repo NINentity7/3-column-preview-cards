@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  width: 60%;
+  height: 60%;
+  margin: 100px auto 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  padding: 40px;
+  place-items: center;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 0 0 7px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 7px 7px 0;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  font-variant-caps: all-small-caps;
+  margin: 15px 0;
+}
+
+.review {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  margin: 40px 40px 0 0;
+  padding: 15px 25px;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 40px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sedan-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedan-btn:hover {
+  background-color: hsl(31, 77%, 52%);
+  transition: all 0.5s ease;
+}
+
+.suvs-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs-btn:hover {
+  background-color: hsl(184, 100%, 22%);
+  transition: all 0.5s ease;
+}
+
+.luxury-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury-btn:hover {
+  background-color: hsl(179, 100%, 13%);
+  transition: all 0.5s ease;
+}
+
+.attribution {
+  color: darkslategrey;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .sedans {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 7px 7px;
+    }
+}
